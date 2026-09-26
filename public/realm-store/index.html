@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#11110f" />
+  <meta name="description" content="The official EmberRealm player store. Choose your next upgrade." />
+  <title>EmberRealm Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> DOUBLE XP WEEKEND IS LIVE <span class="announcement-sub">— Your next adventure starts here</span></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="EmberRealm Store home"><span class="brand-mark">✦</span><span>EMBER<span class="brand-light">REALM</span><small>PLAYER STORE</small></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="active" href="#shop">Store</a><a href="#about">About</a><a href="#support">Support</a></nav>
+    <div class="top-actions"><label class="currency-wrap"><span>Currency</span><select id="currency" aria-label="Currency"><option value="USD">USD $</option><option value="EUR">EUR €</option><option value="GBP">GBP £</option><option value="AUD">AUD $</option><option value="CAD">CAD $</option></select></label><button class="cart-trigger" id="cart-open"><span class="bag-icon">▱</span><span>Cart</span><b id="cart-count">0</b></button></div>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div><div class="hero-copy"><div class="eyebrow"><span></span> THE OFFICIAL PLAYER STORE</div><h1>Make your mark<br />on the <em>realm.</em></h1><p>Stand out, rise faster, and make every moment count.<br class="desktop-only" /> Your next upgrade is waiting.</p><a class="primary-button" href="#shop">Explore the store <span>↗</span></a><div class="server-status"><i></i> SERVER ONLINE <span class="dot-sep">·</span> <strong>play.emberrealm.gg</strong> <button id="copy-ip" aria-label="Copy server address">▣</button></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div><div class="hero-cube cube-a">✦</div><div class="hero-cube cube-b">✧</div><div class="hero-caption">ADVENTURE<br /><span>AWAITS</span></div></div>
+      <div class="hero-index"><span>01</span><span class="index-line"></span><span>03</span></div>
+    </section>
+    <section class="shop-layout" id="shop">
+      <aside class="sidebar"><div class="side-heading">EXPLORE</div><div class="category-list" id="categories"><button class="category active" data-category="featured"><span>✧</span> Featured <span class="chevron">›</span></button><button class="category" data-category="ranks"><span>♛</span> Ranks <span class="chevron">›</span></button><button class="category" data-category="currency"><span>◈</span> Realm coins <span class="chevron">›</span></button><button class="category" data-category="boosts"><span>⚡</span> Boosts & perks <span class="chevron">›</span></button><button class="category" data-category="bundles"><span>▧</span> Bundles <span class="chevron">›</span></button></div><div class="player-card"><div class="player-card-top"><div class="avatar" id="avatar">?</div><div><b id="player-label">Welcome, adventurer</b><small id="player-state">Sign in to personalize your shop</small></div></div><form id="player-form"><label for="player-name">Minecraft username</label><div class="input-row"><input id="player-name" type="text" placeholder="Your username" maxlength="16" autocomplete="off"/><button aria-label="Set username">→</button></div></form><p class="fine-print">Java and Bedrock players welcome.</p></div><div class="sidebar-help"><div class="help-icon">?</div><div><b>Need a hand?</b><p>Our team is here to help.</p><a href="#support">Visit support <span>↗</span></a></div></div></aside>
+      <div class="catalog"><div class="catalog-heading"><div><div class="eyebrow dark-eyebrow"><span></span> YOUR NEXT UPGRADE</div><h2 id="catalog-title">Featured <span>picks</span></h2></div><div class="catalog-tools"><span id="product-count">4 items</span><button class="sort-button" id="sort-button">Popular <span>⌄</span></button></div></div><div class="product-grid" id="product-grid"></div><div class="catalog-note"><span>✦</span><p>Purchases are delivered in-game automatically. Please use your exact player name at checkout.</p></div>
+        <section class="feature-banner" id="about"><div class="banner-copy"><div class="eyebrow"><span></span> BUILT FOR YOUR ADVENTURE</div><h3>A better way<br />to <em>play.</em></h3><p>EmberRealm is a community-first world built for players who want more from every session. Find your crew. Build your legacy.</p><a href="#support" class="text-link">Discover EmberRealm <span>↗</span></a></div><div class="banner-art" aria-hidden="true"><div class="banner-gem">◆</div><div class="banner-ring ring-one"></div><div class="banner-ring ring-two"></div><div class="banner-stars">✦　·　✧<br />　·　✦</div></div></section>
+      </div>
+    </section>
+    <section class="trust-row"><div><span>◈</span><b>Secure checkout</b><small>Your payment is protected</small></div><div><span>↯</span><b>Fast delivery</b><small>Items arrive in moments</small></div><div><span>♡</span><b>Player-first support</b><small>Real people, ready to help</small></div><div><span>✦</span><b>Made for the community</b><small>Every purchase helps us grow</small></div></section>
+    <section class="support-section" id="support"><div><div class="eyebrow dark-eyebrow"><span></span> HERE FOR YOU</div><h2>Questions? <em>We've got you.</em></h2><p>Need help with an order or have a question about a package? Our support crew is happy to help.</p></div><a class="outline-button" href="mailto:help@emberrealm.example">Contact support <span>↗</span></a></section>
+  </main>
+  <footer><div class="footer-main"><a class="brand" href="#home"><span class="brand-mark">✦</span><span>EMBER<span class="brand-light">REALM</span><small>PLAYER STORE</small></span></a><p>A world worth coming back to.</p><div class="footer-links"><a href="#support">Help center</a><a href="#support">Terms</a><a href="#support">Privacy</a><a href="#support">Community</a></div></div><div class="footer-bottom"><span>© 2026 EmberRealm. All rights reserved.</span><span>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span></div></footer>
+  <div class="overlay" id="overlay"></div><aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart"><div class="drawer-head"><div><small>YOUR SELECTION</small><h2>Your cart <span id="drawer-count">(0)</span></h2></div><button id="cart-close" aria-label="Close cart">×</button></div><div id="cart-items" class="cart-items"></div><div id="cart-empty" class="cart-empty"><div>▱</div><h3>Your cart is waiting</h3><p>Add something special to your adventure.</p><button class="primary-button" id="continue-shopping">Explore the store <span>↗</span></button></div><div class="drawer-foot"><div class="total-line"><span>Subtotal</span><b id="cart-total">$0.00</b></div><small>Taxes calculated at checkout.</small><button class="checkout-button" id="checkout">Continue to checkout <span>→</span></button><p>Secure checkout · Instant delivery</p></div></aside>
+  <dialog id="gift-dialog"><button class="dialog-close" id="gift-close">×</button><div class="gift-icon">✦</div><div class="eyebrow dark-eyebrow"><span></span> GIFT CARD</div><h2>Check your balance</h2><p>Enter your gift card code to see the remaining balance.</p><form id="gift-form"><input placeholder="Gift card code" aria-label="Gift card code" required/><button class="primary-button">Check balance <span>→</span></button></form><div class="gift-result" id="gift-result"></div></dialog>
+  <button class="gift-tab" id="gift-open"><span>✧</span> Gift card balance</button>
+  <script src="app.js"></script>
+</body>
+</html>
